@@ -1,0 +1,22 @@
+🔧 1. Function: get_total_order_price(orderId)
+Create a function that returns the total price of a given order (based on quantity × price).
+
+⚙️ 2. Procedure: apply_stock_discount(threshold INT, discount_percent INT)
+Reduces the price of all products with stock > threshold by discount_percent.
+
+🔁 3. Cursor: generate_sales_report()
+A procedure that uses a cursor to:
+
+Loop through all order_items
+
+Print: product name, quantity, total price (quantity × price)
+
+🔥 4. Trigger: before_order_item_insert
+Before inserting into order_items:
+
+Check if there is enough stock
+
+If not, throw an error: "Not enough stock for this product"
+
+If there is stock, reduce stock accordingly and log the sale into sales_log
+
